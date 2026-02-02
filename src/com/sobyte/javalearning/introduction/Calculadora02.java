@@ -30,14 +30,17 @@ public class Calculadora02 {
                 System.out.printf("%.2f * %.2f = %.2f", numberOne, numberTwo, numberOne*numberTwo);
                 break;
             case 4:
-                System.out.printf("%.2f / %.2f = %.2f\n", numberOne, numberTwo, numberOne/numberTwo);
                 if(numberTwo == 0){
                     System.out.println("Não pode ser dividido por 0.");
+                }else {
+                    System.out.printf("%.2f / %.2f = %.2f\n", numberOne, numberTwo, numberOne/numberTwo);
+
                 }
                 break;
 
             default:
                 System.out.println("Opção invalida!");
         }
+        scanner.close();
     }
 }
